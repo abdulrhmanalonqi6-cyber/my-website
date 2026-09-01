@@ -1,9 +1,0 @@
-{
-  "buildCommand": "",
-  "outputDirectory": "public",
-  "functions": {
-    "api/chat.js": {
-      "runtime": "nodejs20.x"
-    }
-  }
-}
