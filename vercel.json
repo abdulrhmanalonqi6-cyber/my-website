@@ -1,4 +1,3 @@
 {
-  "buildCommand": "echo 'Building...'",
-  "outputDirectory": "public"
+  "public": "public"
 }
