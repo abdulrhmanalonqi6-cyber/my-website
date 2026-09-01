@@ -1,66 +1,49 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عبد الرحمن العنقي | الموقع الرسمي</title>
+    <title>عبدالرحمن العنقي</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <header>
+    <div class="container">
         <nav>
             <a href="/">الرئيسية</a>
-            <a href="/about.html">من أنا</a>
-            <a href="/contact.html">اتصل بي</a>
+            <a href="#about">من نحن</a>
+            <a href="#contact">اتصل بنا</a>
         </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h1>مرحباً، أنا عبد الرحمن العنقي</h1>
-            <p>مهندس برمجيات وذكاء اصطناعي | طموح لبناء إمبراطوريتي الخاصة</p>
+        
+        <h1>🚀 مرحباً بك في مشروعي</h1>
+        <p>أنا <strong>عبدالرحمن العنقي</strong></p>
+        
+        <section id="about">
+            <h2>🎯 من أنا؟</h2>
+            <p>شغوف وطموح بالبرمجيات والذكاء الاصطناعي، صديق الإلكترونيات، شخصية طموحة جداً</p>
         </section>
 
-        <section class="about">
-            <h2>من أنا</h2>
-            <p>شخص طموح وشغوف للغاية، أعمل بجد وأتجهز لافتتاح شركتي وإمبراطوريتي الخاصة في المستقبل القريب. أؤمن بأن النجاح يبدأ من الإصرار والمعرفة.</p>
+        <section id="skills">
+            <h2>💻 الخبرات</h2>
+            <ul>
+                <li>✅ خريج ثانوي</li>
+                <li>✅ خبير في البرمجة</li>
+                <li>✅ مهندس ذكاء اصطناعي</li>
+                <li>✅ مطور ومحدث أنظمة</li>
+            </ul>
         </section>
 
-        <section class="skills">
-            <h2>خبراتي ومجالاتي</h2>
-            <div class="grid">
-                <div class="card">مهندس برمجيات</div>
-                <div class="card">مهندس ذكاء اصطناعي</div>
-                <div class="card">مهندس مواقع ويب</div>
-                <div class="card">مهندس سيبراني (مكافحة فيروسات)</div>
-                <div class="card">مهندس تطوير نظم معلومات</div>
-                <div class="card">متخصص ذكاء اصطناعي وتطوير برامج</div>
-            </div>
+        <section id="contact">
+            <h2>📞 تواصل معي</h2>
+            <p>
+                📱 <a href="tel:+967770142880">+967 77 0142880</a><br>
+                📱 <a href="tel:+967730263030">+967 73 0263030</a>
+            </p>
         </section>
 
-        <section class="contact">
-            <h2>تواصل معي</h2>
-            <p>📞: <span dir="ltr">+967770142880</span></p>
-            <p>📧: <span dir="ltr">abdulrhmanalonqi6@gmail.com</span></p>
-        </section>
-
-        <!-- قسم الدردشة الجديد (إضافة فقط) -->
-        <section class="ai-chat">
-            <h2>🤖 اسألني (بوت ذكاء اصطناعي)</h2>
-            <div id="chat-box" class="chat-box">
-                <div class="chat-message bot">مرحباً! أنا مساعد عبد الرحمن الذكي. كيف يمكنني مساعدتك؟</div>
-            </div>
-            <div class="chat-input-area">
-                <input type="text" id="user-input" placeholder="اكتب سؤالك هنا...">
-                <button onclick="sendMessage()">إرسال</button>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2026 عبد الرحمن العنقي. جميع الحقوق محفوظة.</p>
-    </footer>
-
-    <script src="/chat.js"></script>
+        <a href="/chat.html" style="text-decoration: none;">
+            <button class="ai-btn">💬 تحدث مع المساعد الذكي</button>
+        </a>
+    </div>
+    <script src="/app.js"></script>
 </body>
 </html>
