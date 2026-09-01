@@ -33,6 +33,20 @@ nav a:hover {
     text-shadow: 0 0 10px #00e5ff;
 }
 
+.nav-btn {
+    background: #00e5ff;
+    color: #000 !important;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.nav-btn:hover {
+    background: #a855f7;
+    color: #fff !important;
+    text-shadow: none;
+}
+
 main {
     max-width: 900px;
     margin: 0 auto;
@@ -53,7 +67,26 @@ main {
     margin-bottom: 20px;
 }
 
-.about, .skills, .contact, .ai-chat {
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #00e5ff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+    background: #a855f7;
+    color: #fff;
+}
+
+.about, .skills, .contact {
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255,255,255,0.2);
@@ -104,28 +137,54 @@ footer {
     margin-top: 40px;
 }
 
-/* تنسيق الدردشة (إضافة فقط) */
+/* تنسيق صفحة الدردشة */
+.chat-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-main {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+.chat-container {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
 .chat-box {
     background: rgba(0,0,0,0.3);
-    border-radius: 10px;
-    padding: 15px;
-    height: 300px;
+    border-radius: 15px;
+    padding: 20px;
+    height: 400px;
     overflow-y: auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .chat-message {
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    padding: 12px 18px;
+    border-radius: 20px;
+    margin-bottom: 12px;
     max-width: 80%;
-    line-height: 1.4;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    word-wrap: break-word;
 }
 
 .bot {
     background: #302b63;
     color: #fff;
     align-self: flex-start;
+    border-bottom-left-radius: 0;
 }
 
 .user {
@@ -133,6 +192,7 @@ footer {
     color: #000;
     align-self: flex-end;
     margin-left: auto;
+    border-bottom-right-radius: 0;
 }
 
 .chat-input-area {
@@ -142,16 +202,27 @@ footer {
 
 .chat-input-area input {
     flex: 1;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 50px;
     border: none;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
 }
 
 .chat-input-area button {
-    padding: 10px 20px;
+    padding: 15px 25px;
     background: #00e5ff;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     font-weight: bold;
     cursor: pointer;
+    color: #000;
+    transition: 0.3s;
+}
+
+.chat-input-area button:hover {
+    background: #a855f7;
+    color: #fff;
 }

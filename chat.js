@@ -5,14 +5,17 @@ async function sendMessage() {
 
     if (!message) return;
 
-    // إضافة رسالة المستخدم
     const userMsg = document.createElement('div');
     userMsg.className = 'chat-message user';
     userMsg.textContent = message;
     chatBox.appendChild(userMsg);
     input.value = '';
 
-    // الاتصال بالخادم (api/chat.js)
+    const loadingMsg = document.createElement('div');
+    loadingMsg.className = 'chat-message bot';
+    loadingMsg.textContent = '...';
+    chatBox.appendChild(loadingMsg);
+
     try {
         const response = await fetch('/api/chat', {
             method: 'POST',
@@ -20,19 +23,10 @@ async function sendMessage() {
             body: JSON.stringify({ message })
         });
         const data = await response.json();
-
-        // إضافة رد البوت
-        const botMsg = document.createElement('div');
-        botMsg.className = 'chat-message bot';
-        botMsg.textContent = data.reply || 'حدث خطأ، حاول مرة أخرى.';
-        chatBox.appendChild(botMsg);
+        loadingMsg.textContent = data.reply || 'عذراً، لم أستطع فهم السؤال.';
     } catch (error) {
-        const botMsg = document.createElement('div');
-        botMsg.className = 'chat-message bot';
-        botMsg.textContent = 'تعذر الاتصال بالخادم.';
-        chatBox.appendChild(botMsg);
+        loadingMsg.textContent = 'حدث خطأ في الاتصال بالخادم.';
     }
 
-    // تمرير تلقائي لأسفل
     chatBox.scrollTop = chatBox.scrollHeight;
 }
