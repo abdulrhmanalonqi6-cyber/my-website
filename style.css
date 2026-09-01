@@ -4,11 +4,13 @@
     box-sizing: border-box;
     font-family: 'Tahoma', sans-serif;
 }
+
 body {
     background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
     color: #fff;
     min-height: 100vh;
 }
+
 header {
     background: rgba(0,0,0,0.4);
     backdrop-filter: blur(10px);
@@ -17,6 +19,7 @@ header {
     top: 0;
     z-index: 100;
 }
+
 nav a {
     color: #fff;
     text-decoration: none;
@@ -24,10 +27,12 @@ nav a {
     font-size: 1.2rem;
     transition: 0.3s;
 }
+
 nav a:hover {
     color: #00e5ff;
     text-shadow: 0 0 10px #00e5ff;
 }
+
 .nav-btn {
     background: #00e5ff;
     color: #000 !important;
@@ -35,21 +40,25 @@ nav a:hover {
     border-radius: 50px;
     font-weight: bold;
 }
+
 .nav-btn:hover {
     background: #a855f7;
     color: #fff !important;
     text-shadow: none;
 }
+
 main {
     max-width: 900px;
     margin: 0 auto;
     padding: 40px 20px;
 }
+
 .hero {
     text-align: center;
     padding: 80px 0;
     border-bottom: 2px solid rgba(255,255,255,0.1);
 }
+
 .hero h1 {
     font-size: 3rem;
     background: linear-gradient(90deg, #00e5ff, #a855f7);
@@ -57,6 +66,7 @@ main {
     -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
 }
+
 .cta-btn {
     display: inline-block;
     margin-top: 20px;
@@ -69,11 +79,13 @@ main {
     font-size: 1.2rem;
     transition: 0.3s;
 }
+
 .cta-btn:hover {
     transform: scale(1.05);
     background: #a855f7;
     color: #fff;
 }
+
 .about, .skills, .contact {
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(15px);
@@ -83,6 +95,7 @@ main {
     margin-top: 40px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
+
 h2 {
     color: #00e5ff;
     margin-bottom: 20px;
@@ -90,11 +103,13 @@ h2 {
     display: inline-block;
     padding-bottom: 5px;
 }
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
+
 .card {
     background: rgba(0,0,0,0.3);
     padding: 20px;
@@ -104,20 +119,38 @@ h2 {
     border-left: 5px solid #00e5ff;
     transition: 0.3s;
 }
+
 .card:hover {
     transform: translateY(-5px);
     background: rgba(0,229,255,0.2);
 }
+
 .contact p {
     font-size: 1.2rem;
     margin: 10px 0;
 }
+
 footer {
     text-align: center;
     padding: 20px;
     background: rgba(0,0,0,0.4);
     margin-top: 40px;
 }
+
+/* تنسيق صفحة الدردشة */
+.chat-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-main {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
 .chat-container {
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(15px);
@@ -125,6 +158,7 @@ footer {
     padding: 20px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
+
 .chat-box {
     background: rgba(0,0,0,0.3);
     border-radius: 15px;
@@ -135,6 +169,7 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
 .chat-message {
     padding: 12px 18px;
     border-radius: 20px;
@@ -144,12 +179,14 @@ footer {
     font-size: 1.1rem;
     word-wrap: break-word;
 }
+
 .bot {
     background: #302b63;
     color: #fff;
     align-self: flex-start;
     border-bottom-left-radius: 0;
 }
+
 .user {
     background: #00e5ff;
     color: #000;
@@ -157,10 +194,12 @@ footer {
     margin-left: auto;
     border-bottom-right-radius: 0;
 }
+
 .chat-input-area {
     display: flex;
     gap: 10px;
 }
+
 .chat-input-area input {
     flex: 1;
     padding: 15px;
@@ -171,6 +210,7 @@ footer {
     font-size: 1.1rem;
     outline: none;
 }
+
 .chat-input-area button {
     padding: 15px 25px;
     background: #00e5ff;
@@ -181,6 +221,7 @@ footer {
     color: #000;
     transition: 0.3s;
 }
+
 .chat-input-area button:hover {
     background: #a855f7;
     color: #fff;
